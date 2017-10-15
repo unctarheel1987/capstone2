@@ -1,0 +1,629 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.button {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 40%;
+}
+
+/* header section */
+
+.mobile-header {
+  display: none;
+}
+
+.desktop-header {
+  z-index: 100;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e8e8e8;
+  height: 64px;
+}
+
+.desktop-header .logo {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  margin-left: 1.5rem;
+}
+
+#logo-text {
+  font-size: 1.25rem;
+  color: Gray;
+}
+
+#logo-text strong {
+  color: #000000;
+}
+
+.desktop-header nav {
+  margin-right: 1.5rem;
+  z-index: 1;
+}
+
+.desktop-nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #404040;
+  justify-content: flex-end;
+}
+
+.desktop-nav a:hover {
+  background-color: #adccff;
+}
+
+.desktop-nav a:active {
+  color: black;
+  background-color: #afffb2;
+}
+
+
+
+/*Jumbotron style*/
+.jumbotron {
+  display: flex;
+  position: relative;
+  align-items: center;
+  background-color: #ededed;
+  top: 4rem;
+}
+
+.jumbotron-image {
+  width: 60%;
+  margin: 2rem 1.5rem;
+}
+
+.jumbotron-image img {
+  width: 100%;
+  height: auto;
+}
+
+.jumbotron-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 40%;
+}
+
+.jumbotron-text {
+  margin-left: 1rem;
+}
+
+.jumbotron-text h1 {
+  margin: 2rem 1.5rem 2rem 0rem;
+  color: #52524E;
+  font-size: 2rem;
+  padding-bottom: 24px;
+  font-weight: bold;
+}
+
+.jumbotron-text h2 {
+  color: #52524E;
+  font-size: 24px;
+  padding-bottom: 24px;
+  margin: 0;
+}
+
+.jumbotron .btn {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  width: 16rem;
+  max-width: 86%;
+  padding: 1rem 0;;
+  margin: 1.5rem 1.5rem 2rem 1rem;
+  text-decoration: none;
+  background-color: #404040;
+  color: white;
+  border-radius: 6px;
+}
+
+.jumbotron .btn:active {
+  color: white;
+  background-color: #F96D00;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+  }
+
+
+  /*Content styling*/
+.content{
+  display: flex;
+  width: 100%;
+  padding-top: 16px;
+  position: relative;
+  background-color: #f7f8f9;
+  }
+.left{
+  margin: 32px 24px;
+  width: 60%;
+  }
+.left .library{
+  width: 100%;
+  }
+.left h1{
+  color: #52524E;
+  font-size: 32px;
+  padding-top: 32px;
+  padding-bottom: 24px;
+}
+.left p{
+  padding-top: 24px;
+  color: #52524E;
+  font-weight: lighter;
+  font-size: 18px;
+}
+.left .author{
+  padding-bottom: 32px;
+}
+
+.right{
+  display: flex;
+  flex-direction: column;
+  width: 32.4rem;
+  justify-content: flex-start;
+  margin-left: 1.5rem;
+}
+.small{
+  display: flex;
+}
+.info:hover{
+  background-color: #d4d6d8;
+}
+.right img{
+  width: 35%;
+  margin-left: 1rem;
+}
+.pic img{
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.info{
+  align-items: center;
+  margin-left: 10px;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+}
+.info h3{
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.info p{
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+.info a{
+  color: #8db3ef;
+}
+.pic-mobile{
+  display: none;
+}
+.small .mobile{
+  display: none;
+}
+@
+
+/*Third section: courses*/
+.section-courses{
+  background-color: #d6d6d6;
+  /*padding: 32px 72px;*/
+}
+.section-title{
+  color: #52524E;
+  font-size: 32px;
+  padding-top: 32px;
+  padding-bottom: 24px;
+  text-align: center;
+  position: relative;
+  line-height: 1.6;
+  font-weight: bold;
+}
+#courses-list{
+  bottom: 1rem;
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.courses{
+  width: 27%;
+  padding: 32px;
+  justify-content: space-between;
+}
+.courses img{
+  width: 100%;
+  height: auto;
+}
+.title-course{
+  padding-top:1rem;
+  color: black;
+  padding-bottom: 24px;
+  height: 15rem;
+  background-color: #fbfbfb;;
+}
+.title-course h3{
+  font-size: 28px;
+  margin: 0.8rem 0.5rem;
+  font-weight: bold;
+}
+.title-course h2{
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin: 1rem 0.5rem;
+}
+.title-course p{
+  font-size: 1.1rem;
+  margin: 0.5rem;
+  font-weight: 100;
+}
+.desc-courses p {
+  font-size: 1.25rem;
+}
+.courses-names{
+  display: none;
+}
+
+/*Thesis exhibit*/
+.exhibit{
+  width: 100%;
+  display: flex;
+  position: relative;
+  padding-top: 16px;
+
+}
+.left-exhibit{
+  margin: 32px 24px;
+  width: 60%;
+  }
+  .left-exhibit video{
+    width: 100%;
+  }
+  .left-exhibit h1{
+    color: #52524E;
+    font-size: 32px;
+    padding-top: 32px;
+    padding-bottom: 24px;
+  }
+  .left-exhibit p{
+    padding-top: 24px;
+    color: #52524E;
+    font-weight: lighter;
+    font-size: 18px;
+  }
+  video{
+    width: 100%;
+  }
+  .right-exhibit {
+    display: flex;
+    flex-direction: column;
+    width: 32.4rem;
+    justify-content: flex-start;
+    margin-left: 1.5rem;
+    margin-top: 34px;
+  }
+  .smalls{
+    display: flex;
+    float: right;
+  }
+  .smalls .pic{
+    height: auto;
+    width: 35%;
+    margin: 16px;
+  }
+  .small .info{
+    width: 65%;
+  }
+  .info h3{
+    font-weight: bolder;
+  }
+  .small .pic img{
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  /*Footer*/
+  footer{
+    padding-top: 16px;
+    padding-bottom: 32px;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+  }
+  footer span{
+    margin-left: 24px;
+  }
+  footer a{
+    padding-right: 16px;
+    color: #52524E;
+  }
+  /*Media style*/
+
+  /*Header*/
+  @media only screen and (max-width: 640px) {
+    .desktop-header {
+      display: none;
+    }
+    .mobile-header {
+      position: fixed;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      background-color: #fff;
+      border-bottom: 1px solid LightGray;
+      height: 64px;
+      z-index: 1;
+
+    }
+    .mobile-nav {
+      display: flex;
+      flex-grow: 1;
+      justify-content: space-between;
+      margin: 0 1.5rem;
+    }
+    .mobile-nav img {
+      vertical-align: middle;
+      justify-content: space-between;
+    }
+  }
+  /*Banner */
+  @media only screen and (max-width:700px){
+    .jumbotron{
+      flex-direction: column;
+      justify-content: center;
+      height: auto;
+      width: 100%;
+    }
+    .jumbotron-image img{
+      margin: 0;
+      width: 100%;
+      height: auto;
+    }
+    .jumbotron-content{
+      display: inline-block;
+      flex-direction: column;
+      margin-right: 1rem;
+      padding-bottom: 3rem;
+      width: 90%;
+      height: auto;
+    }
+    .jumbotron-text{
+      min-width: 90%;
+      display: block;
+      height: auto;
+      margin: 0 auto;
+      padding: 0;
+    }
+    .jumbotron-text h1{
+      font-size: 1.35rem;
+      margin-right: 0;
+      width: 100%;
+      top: 1rem;
+    }
+
+    .jumbotron .btn{
+      padding-top: 8px;
+      padding-bottom: 8px;
+      width: 90%;
+      margin-bottom: 2rem;
+
+    }
+
+    .jumbotron-text h2{
+      font-size: 1rem;
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 500px){
+    .jumbotron{
+      flex-direction: column;
+    }
+    .jumbotron-image{
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+    }
+    .jumbotron-image img{
+      width: 100%;
+      height: auto;
+      }
+    .jumbotron-text{
+        width: 100%;
+        padding: 1rem;
+        height: auto;
+        text-align: left;
+      }
+
+    .jumbotron-content .btn{
+        width: 100%;
+        top: 1rem;
+      }
+    .jumbotron-text h1{
+        padding-top: 32px;
+        padding-right: 16px;
+        padding-bottom: 38px;
+        font-size: 32px;
+      }
+    .jumbotron-text h2{
+        padding-bottom: 2px;
+        font-size: 30px;
+      }
+    /*.jumbotron .btn{
+        margin-bottom: 2rem;
+      }*/
+
+  }
+
+/*Content left and right sections*/
+@media only screen and (max-width: 700px) {
+
+  body{
+    overflow-x: hidden !important;
+  }
+  .content{
+    display: block;
+    flex-direction: column;
+    width: 100%;
+  }
+  .left{
+    width: 90%;
+  }
+  .right{
+    width: 100%;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+	.jumbotron-text{
+		margin-top: auto;
+	}
+  .small{
+    display: block;
+  }
+  .pic {
+    display: none;
+  }
+  .pic-mobile{
+    display: block;
+    width: 80%;
+  }
+  .pic-mobile img{
+    width: 90%;
+    margin-right: 0.5rem;
+  }
+  .info{
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .small .hightlight{
+    display: none;
+  }
+
+}
+/*Courses*/
+/*mobile*/
+@media only screen and (max-width: 700px) {
+.section-courses{
+  width: 100%;
+}
+  #List-courses {
+    display: block;
+    background-color:#fff8ed;
+    width: 100%;
+  }
+
+  .courses {
+    display: none;
+  }
+
+  .courses-names{
+    display: block;
+    width: 100%;
+  }
+
+  .button2 {
+    width: 85%;
+    padding-top: 16px;
+    padding-bottom: 24px;
+    padding-left: 16px;
+    padding-right: 32px;
+    background-color: #f7f7f7;
+    margin-left: 1rem;
+    margin-bottom: 8px;
+    font-weight: bolder;
+    border-radius: 6px;
+  }
+
+  .button2:hover {
+    background-color: #f7af42;
+    color: white;
+  }
+}
+media only screen and (max-width: 700px) {
+  .content{
+    display: block;
+    flex-direction: column;
+    width: 100%;
+  }
+  .left{
+    width: 90%;
+  }
+  .right{
+    width: 100%;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+	.jumbotron-text{
+		margin-top: auto;
+	}
+  .small{
+    display: block;
+  }
+  .pic {
+    display: none;
+  }
+  .pic-mobile{
+    display: block;
+    width: 80%;
+  }
+  .pic-mobile img{
+    width: 90%;
+    margin-right: 0.5rem;
+  }
+  .info{
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .small .hightlight{
+    display: none;
+  }
+
+}
+/*Video section media*/
+@media only screen and (max-width: 700px){
+  .left-exhibit{
+    width: 100%;
+  }
+
+  .left-exhibit video{
+
+    padding-top: 16px;
+    padding-bottom: 24px;
+    text-align: center;
+  }
+  .left-exhibit h1 {
+    display: none;
+  }
+  .left-exhibit p{
+    display: none;
+  }
+  .right-exhibit{
+    display: none;
+  }
+}
+
+  /*Footer*/
+  @media only screen and (max-width: 700px){
+    #footer-desktop{
+      display: none;
+    }
+    footer span{
+      width: 90%;
+      text-align: center;
+      margin: auto 0;
+    }
+  }
